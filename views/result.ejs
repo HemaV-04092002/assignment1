@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <style type="text/css">
+      .form-style-5 {
+        max-width: 500px;
+        padding: 50px 50px;
+        background: #f4f7f8;
+        margin: 10px auto;
+        padding: 20px;
+        background: #f4f7f8;
+        border-radius: 8px;
+        margin-top: 8%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .form-style-5 input[type="text"] {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin: 0;
+        outline: 0;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background-color: #e8eeef;
+
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        margin-bottom: 30px;
+      }
+
+      .form-style-5 input[type="submit"] {
+        position: relative;
+        display: block;
+        padding: 19px 39px 18px 39px;
+        color: #fff;
+        margin: 0 auto;
+        background: #1abc9c;
+        font-size: 18px;
+        text-align: center;
+        font-style: normal;
+        width: 100%;
+        border: 1px solid #16a085;
+        border-width: 1px 1px 3px;
+        margin-bottom: 10px;
+      }
+      .form-style-5 input[type="submit"]:hover {
+        background: #109177;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-style-5">
+      <center><h1>Currency Converter Page</h1></center>
+      <form action="/rsubmit" method="GET">
+        <fieldset>
+          Amount: <input type="text" name="input1" /> From:<input
+            type="text"
+            name="input2"
+          />
+          To:<input type="text" name="input3" />
+        </fieldset>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>
