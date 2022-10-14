@@ -70,24 +70,7 @@ app.get("/signupsubmit", (req, res) => {
 });
 
 app.get("/rsubmit",function(req,res){
-  
-  /*const input1 = req.query.input1;
-  request('https://api.weatherapi.com/v1/forecast.json?key=88cf4abebf3043bd8f663248223005&q='+input1+'&days=7',function(error,response,body){
-if ("error" in JSON.parse(body)){
-    if(JSON.parse(body).error.code.toString().length>0){
-        console(JSON.parse(body).error.message);
-    }
-
-}
-else{
-    let data = JSON.parse(body);
-    const d = "The current temperature of city "+data.location.name+" is "+data.current.temp_f;
-console.log(typeof d);
-res.render('output',{d:d});
-
-}*/
-
-const input1 = req.query.input1;
+ const input1 = req.query.input1;
 const input2 = req.query.input2;
 const input3 = req.query.input3;
 let a = parseInt(input1);
