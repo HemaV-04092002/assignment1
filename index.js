@@ -37,7 +37,7 @@ app.get("/signinsubmit", (req, res) => {
     .get()
     .then((docs) => {
       if (docs.size > 0) {
-        //query my database with all the users only when login is succefull
+        
         res.render("result")
       }
       else{
@@ -76,9 +76,8 @@ const input3 = req.query.input3;
 let a = parseInt(input1);
 
 
-let fromCurrency = input2; // US Dollars
-let toCurrency = input3; // Indian Ruppee
-
+let fromCurrency = input2; 
+let toCurrency = input3; 
 let amountToConvert = a;
 
 let currencyConverter = new CC(
